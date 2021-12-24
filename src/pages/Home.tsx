@@ -17,7 +17,7 @@ const Home = () => {
           moveToQuestion();
         }}
       >
-        Contained
+        Start
       </Button>
     </div>
   );

@@ -9,6 +9,51 @@ export interface IquestionTypes {
   button1: ButtonTypes;
   button2: ButtonTypes;
 }
+export interface ItypeTypes {
+  type: string;
+  value: number;
+}
+export const resultState = atom<string>({
+  key: "resultState",
+  default: "",
+});
+export const mbtiTypeState = atom<ItypeTypes[]>({
+  key: "mbtiTypeState",
+  default: [
+    {
+      type: "I",
+      value: 0,
+    },
+    {
+      type: "E",
+      value: 0,
+    },
+    {
+      type: "S",
+      value: 0,
+    },
+    {
+      type: "N",
+      value: 0,
+    },
+    {
+      type: "T",
+      value: 0,
+    },
+    {
+      type: "F",
+      value: 0,
+    },
+    {
+      type: "P",
+      value: 0,
+    },
+    {
+      type: "J",
+      value: 0,
+    },
+  ],
+});
 export const questionState = atom<IquestionTypes[]>({
   key: "questionState",
   default: [
